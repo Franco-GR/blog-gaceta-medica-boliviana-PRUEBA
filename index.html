@@ -4,57 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Blog de la Gaceta Médica Boliviana. Espacio de divulgación académica y científica para autores y profesionales de las ciencias de la salud.">
+    <title>Blog Editorial | Gaceta Médica Boliviana</title>
 
-    <title>Blog | Gaceta Médica Boliviana</title>
+    <meta name="description" content="Blog editorial de la Gaceta Médica Boliviana. Espacio para la difusión de editoriales, reflexiones académicas y pensamiento científico.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
+    <!-- =========================
+         BARRA SUPERIOR
+    ========================== -->
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span>Gaceta Médica Boliviana</span>
+            <span>Facultad de Medicina · Universidad Mayor de San Simón</span>
+        </div>
+    </div>
+
+
+    <!-- =========================
+         CABECERA
+    ========================== -->
 
     <header class="header">
 
         <div class="container header-content">
 
-            <a href="index.html" class="brand">
+            <div class="brand">
 
                 <div class="brand-mark">
                     GMB
                 </div>
 
                 <div class="brand-text">
-                    <span class="brand-name">
-                        Gaceta Médica Boliviana
-                    </span>
-
-                    <span class="brand-subtitle">
-                        Facultad de Medicina · UMSS
-                    </span>
+                    <h1>Gaceta Médica Boliviana</h1>
+                    <p>Blog Editorial</p>
                 </div>
 
-            </a>
+            </div>
 
+            <button class="menu-button" id="menuButton" aria-label="Abrir menú">
+                ☰
+            </button>
 
-            <nav class="navigation">
+            <nav class="navigation" id="navigation">
 
-                <a href="#inicio">
-                    Inicio
-                </a>
+                <a href="#inicio">Inicio</a>
 
-                <a href="#editoriales">
-                    Editoriales
-                </a>
+                <a href="#editoriales">Editoriales</a>
 
-                <a href="#sobre">
-                    Sobre el Blog
-                </a>
+                <a href="#autores">Autores</a>
 
-                <a href="#publicar" class="nav-button">
-                    Publicar
-                </a>
+                <a href="#sobre">Sobre el blog</a>
 
             </nav>
 
@@ -63,65 +72,50 @@
     </header>
 
 
-
-    <!-- HERO -->
+    <!-- =========================
+         HERO / PORTADA
+    ========================== -->
 
     <main>
 
-        <section id="inicio" class="hero">
+        <section class="hero" id="inicio">
 
-            <div class="container hero-grid">
+            <div class="container hero-content">
 
-                <div class="hero-content">
+                <div class="hero-text">
 
                     <span class="eyebrow">
-                        BLOG ACADÉMICO
+                        ESPACIO DE PENSAMIENTO CIENTÍFICO
                     </span>
 
-                    <h1>
-                        Ideas que generan conversación.
-                        <span>Ciencia que genera conocimiento.</span>
-                    </h1>
+                    <h2>
+                        Ideas que abren conversación.
+                        <span>Conocimiento que transforma.</span>
+                    </h2>
 
-                    <p class="hero-description">
-
+                    <p>
                         Un espacio de la Gaceta Médica Boliviana dedicado
-                        a compartir reflexiones, experiencias y perspectivas
-                        de autores y académicos del área de la salud.
-
+                        a compartir editoriales, reflexiones y perspectivas
+                        de académicos y profesionales del área de la salud.
                     </p>
 
-                    <div class="hero-actions">
-
-                        <a href="#editoriales" class="button button-primary">
-                            Explorar editoriales
-                        </a>
-
-                        <a href="#sobre" class="button button-secondary">
-                            Conocer el Blog
-                        </a>
-
-                    </div>
+                    <a href="#editoriales" class="primary-button">
+                        Explorar editoriales
+                    </a>
 
                 </div>
 
-
                 <div class="hero-card">
-
-                    <div class="hero-card-label">
-                        GACETA MÉDICA BOLIVIANA
-                    </div>
 
                     <div class="hero-card-line"></div>
 
-                    <p>
-                        Un espacio para las ideas,
-                        la reflexión académica y
-                        el diálogo científico.
+                    <p class="hero-quote">
+                        “La ciencia no solo produce evidencia;
+                        también genera preguntas, debate y nuevas ideas.”
                     </p>
 
                     <span>
-                        Facultad de Medicina · UMSS
+                        Gaceta Médica Boliviana
                     </span>
 
                 </div>
@@ -131,156 +125,151 @@
         </section>
 
 
+        <!-- =========================
+             EDITORIALES
+        ========================== -->
 
-        <!-- EDITORIALES DESTACADAS -->
-
-        <section id="editoriales" class="section">
+        <section class="editorials-section" id="editoriales">
 
             <div class="container">
 
                 <div class="section-heading">
 
                     <div>
-
-                        <span class="eyebrow">
+                        <span class="section-label">
                             PUBLICACIONES
                         </span>
 
                         <h2>
-                            Editoriales destacadas
+                            Editoriales
                         </h2>
-
                     </div>
 
                     <p>
                         Reflexiones y perspectivas de autores
-                        vinculados con las ciencias de la salud.
+                        vinculados con la investigación y las ciencias de la salud.
                     </p>
 
                 </div>
 
 
-
-                <div class="editorials-grid">
-
+                <div class="editorial-grid">
 
                     <!-- EDITORIAL 1 -->
 
-                    <article class="editorial-card">
+                    <article class="editorial-card featured">
 
-                        <span class="editorial-type">
+                        <div class="card-category">
                             EDITORIAL
-                        </span>
+                        </div>
 
                         <h3>
-                            Título de la primera editorial
+                            Próximamente: nuestro primer editorial
                         </h3>
 
-                        <p class="editorial-excerpt">
-
-                            En este espacio aparecerá una breve
-                            introducción o descripción de la editorial.
-
+                        <p class="card-description">
+                            En este espacio encontrarás editoriales y
+                            reflexiones académicas sobre temas relevantes
+                            para la medicina, la investigación y la salud.
                         </p>
 
-                        <div class="editorial-meta">
+                        <div class="card-footer">
 
-                            <strong>
-                                Autor de ejemplo
-                            </strong>
+                            <div class="author-info">
+                                <strong>
+                                    Gaceta Médica Boliviana
+                                </strong>
 
-                            <span>
-                                Universidad / Institución
+                                <span>
+                                    Facultad de Medicina · UMSS
+                                </span>
+                            </div>
+
+                            <span class="read-more">
+                                Leer →
                             </span>
 
                         </div>
 
-                        <a href="#" class="read-more">
-                            Leer editorial →
-                        </a>
-
                     </article>
-
 
 
                     <!-- EDITORIAL 2 -->
 
                     <article class="editorial-card">
 
-                        <span class="editorial-type">
-                            EDITORIAL
-                        </span>
+                        <div class="card-category">
+                            CIENCIA
+                        </div>
 
                         <h3>
-                            Ciencia, medicina y sociedad
+                            Nuevas perspectivas para la investigación en salud
                         </h3>
 
-                        <p class="editorial-excerpt">
-
-                            Las editoriales permiten abordar
-                            temas relevantes desde una perspectiva
-                            académica y crítica.
-
+                        <p class="card-description">
+                            Próximamente podrás conocer las opiniones y
+                            experiencias de académicos que contribuyen al
+                            desarrollo de la ciencia y la medicina.
                         </p>
 
-                        <div class="editorial-meta">
+                        <div class="card-footer">
 
-                            <strong>
-                                Autor de ejemplo
-                            </strong>
+                            <div class="author-info">
+                                <strong>
+                                    Próximamente
+                                </strong>
 
-                            <span>
-                                Facultad de Medicina
+                                <span>
+                                    Editorial
+                                </span>
+                            </div>
+
+                            <span class="read-more">
+                                Leer →
                             </span>
 
                         </div>
 
-                        <a href="#" class="read-more">
-                            Leer editorial →
-                        </a>
-
                     </article>
-
 
 
                     <!-- EDITORIAL 3 -->
 
                     <article class="editorial-card">
 
-                        <span class="editorial-type">
-                            EDITORIAL
-                        </span>
+                        <div class="card-category">
+                            INVESTIGACIÓN
+                        </div>
 
                         <h3>
-                            El futuro de la investigación médica
+                            Ciencia, evidencia y pensamiento crítico
                         </h3>
 
-                        <p class="editorial-excerpt">
-
-                            Un espacio para analizar los desafíos
-                            actuales y futuros de la investigación
-                            en ciencias de la salud.
-
+                        <p class="card-description">
+                            Un espacio para discutir los desafíos,
+                            oportunidades y responsabilidades de quienes
+                            producen conocimiento científico.
                         </p>
 
-                        <div class="editorial-meta">
+                        <div class="card-footer">
 
-                            <strong>
-                                Autor de ejemplo
-                            </strong>
+                            <div class="author-info">
+                                <strong>
+                                    Próximamente
+                                </strong>
 
-                            <span>
-                                Cochabamba · Bolivia
+                                <span>
+                                    Editorial
+                                </span>
+                            </div>
+
+                            <span class="read-more">
+                                Leer →
                             </span>
 
                         </div>
 
-                        <a href="#" class="read-more">
-                            Leer editorial →
-                        </a>
-
                     </article>
-
 
                 </div>
 
@@ -289,92 +278,74 @@
         </section>
 
 
+        <!-- =========================
+             AUTORES
+        ========================== -->
 
-        <!-- SOBRE EL BLOG -->
+        <section class="authors-section" id="autores">
 
-        <section id="sobre" class="section section-light">
-
-            <div class="container about-grid">
+            <div class="container authors-content">
 
                 <div>
 
-                    <span class="eyebrow">
+                    <span class="section-label">
+                        VOCES ACADÉMICAS
+                    </span>
+
+                    <h2>
+                        Autores
+                    </h2>
+
+                </div>
+
+                <p>
+                    El Blog Editorial de la Gaceta Médica Boliviana busca
+                    visibilizar la experiencia, conocimiento y pensamiento
+                    de investigadores, docentes y profesionales de las
+                    ciencias de la salud.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SOBRE EL BLOG
+        ========================== -->
+
+        <section class="about-section" id="sobre">
+
+            <div class="container about-content">
+
+                <div class="about-number">
+                    GMB
+                </div>
+
+                <div>
+
+                    <span class="section-label">
                         SOBRE ESTE ESPACIO
                     </span>
 
                     <h2>
-                        Un espacio para compartir conocimiento
-                    </h2>
-
-                </div>
-
-
-                <div class="about-text">
-
-                    <p>
-
-                        El Blog de la Gaceta Médica Boliviana nace como
-                        un espacio complementario de divulgación y
-                        comunicación académica.
-
-                    </p>
-
-                    <p>
-
-                        Su objetivo es facilitar el intercambio de ideas,
-                        reflexiones y experiencias entre investigadores,
-                        profesionales y académicos de las ciencias de
-                        la salud.
-
-                    </p>
-
-                    <p>
-
-                        Las publicaciones buscan contribuir al diálogo
-                        científico y acercar el conocimiento médico a
-                        nuestra comunidad académica.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- PUBLICAR -->
-
-        <section id="publicar" class="publish-section">
-
-            <div class="container publish-content">
-
-                <div>
-
-                    <span class="eyebrow">
-                        PARTICIPA
-                    </span>
-
-                    <h2>
-                        ¿Quieres compartir una editorial?
+                        Un espacio para compartir conocimiento.
                     </h2>
 
                     <p>
+                        El Blog Editorial forma parte de las iniciativas
+                        de difusión científica de la Gaceta Médica Boliviana,
+                        revista oficial de la Facultad de Medicina de la
+                        Universidad Mayor de San Simón.
+                    </p>
 
-                        Si eres investigador, docente, profesional
-                        o académico y deseas aportar una reflexión
-                        relacionada con las ciencias de la salud,
-                        próximamente podrás enviar tu propuesta.
-
+                    <p>
+                        Su propósito es acercar el pensamiento académico
+                        a estudiantes, profesionales, investigadores y
+                        lectores interesados en las ciencias de la salud.
                     </p>
 
                 </div>
-
-
-                <a href="#" class="button button-white">
-                    Enviar propuesta
-                </a>
 
             </div>
 
@@ -383,8 +354,9 @@
     </main>
 
 
-
-    <!-- PIE DE PÁGINA -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer class="footer">
 
@@ -396,20 +368,31 @@
                     Gaceta Médica Boliviana
                 </strong>
 
-                <span>
-                    Facultad de Medicina · Universidad Mayor de San Simón
-                </span>
+                <p>
+                    Revista oficial de la Facultad de Medicina
+                    de la Universidad Mayor de San Simón.
+                </p>
 
             </div>
 
-            <span>
-                © 2026 Gaceta Médica Boliviana
-            </span>
+            <div class="footer-right">
+
+                <span>
+                    Blog Editorial
+                </span>
+
+                <span>
+                    © 2026 GMB
+                </span>
+
+            </div>
 
         </div>
 
     </footer>
 
+
+    <script src="script.js"></script>
 
 </body>
 </html>
