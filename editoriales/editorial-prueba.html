@@ -9,390 +9,278 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Editorial del Blog Editorial de la Gaceta Médica Boliviana.">
+          content="Editorial de la Gaceta Médica Boliviana">
 
-    <title>Editorial | Gaceta Médica Boliviana</title>
+    <title>El papel de la ciencia en la transformación de la salud | Gaceta Médica Boliviana</title>
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <style>
-
-        .editorial-page {
-            background: var(--gris-50);
-            min-height: 100vh;
-        }
-
-        .editorial-header {
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--azul-oscuro),
-                    var(--azul),
-                    var(--turquesa)
-                );
-
-            color: white;
-            padding: 85px 0 70px;
-        }
-
-        .editorial-header-content {
-            max-width: 900px;
-        }
-
-        .editorial-label {
-            display: inline-block;
-            padding: 7px 13px;
-            border: 1px solid rgba(255,255,255,0.25);
-            border-radius: 50px;
-            background: rgba(255,255,255,0.08);
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 22px;
-        }
-
-        .editorial-title {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(36px, 5vw, 58px);
-            line-height: 1.12;
-            margin-bottom: 25px;
-        }
-
-        .editorial-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18px;
-            color: rgba(255,255,255,0.78);
-            font-size: 14px;
-        }
-
-        .editorial-content-area {
-            padding: 70px 0;
-        }
-
-        .editorial-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) 300px;
-            gap: 55px;
-            align-items: start;
-        }
-
-        .editorial-body {
-            background: white;
-            border: 1px solid var(--gris-300);
-            border-radius: var(--radio);
-            padding: 50px;
-            box-shadow: var(--sombra-suave);
-        }
-
-        .editorial-body p {
-            color: var(--gris-700);
-            font-size: 17px;
-            line-height: 1.9;
-            margin-bottom: 24px;
-        }
-
-        .editorial-body h2 {
-            font-family: Georgia, "Times New Roman", serif;
-            color: var(--azul-oscuro);
-            font-size: 28px;
-            margin: 38px 0 18px;
-        }
-
-        .editorial-body h3 {
-            color: var(--azul);
-            font-size: 20px;
-            margin: 30px 0 12px;
-        }
-
-        .editorial-body blockquote {
-            margin: 35px 0;
-            padding: 25px 30px;
-            border-left: 4px solid var(--dorado);
-            background: var(--azul-claro);
-            color: var(--azul-oscuro);
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 20px;
-            line-height: 1.6;
-        }
-
-        .editorial-sidebar {
-            position: sticky;
-            top: 120px;
-        }
-
-        .author-card {
-            background: white;
-            border: 1px solid var(--gris-300);
-            border-radius: var(--radio);
-            padding: 28px;
-            box-shadow: var(--sombra-suave);
-        }
-
-        .author-card-label {
-            color: var(--turquesa);
-            font-size: 11px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            margin-bottom: 15px;
-        }
-
-        .author-card h3 {
-            font-family: Georgia, "Times New Roman", serif;
-            color: var(--azul-oscuro);
-            font-size: 23px;
-            line-height: 1.25;
-            margin-bottom: 10px;
-        }
-
-        .author-card p {
-            color: var(--gris-500);
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .author-divider {
-            height: 1px;
-            background: var(--gris-300);
-            margin: 22px 0;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 30px;
-            color: var(--azul);
-            font-size: 14px;
-            font-weight: 800;
-        }
-
-        .back-link:hover {
-            color: var(--turquesa);
-        }
-
-        @media (max-width: 900px) {
-
-            .editorial-layout {
-                grid-template-columns: 1fr;
-            }
-
-            .editorial-sidebar {
-                position: static;
-            }
-
-        }
-
-        @media (max-width: 600px) {
-
-            .editorial-header {
-                padding: 60px 0 50px;
-            }
-
-            .editorial-content-area {
-                padding: 40px 0;
-            }
-
-            .editorial-body {
-                padding: 28px;
-            }
-
-            .editorial-body p {
-                font-size: 16px;
-            }
-
-        }
-
-    </style>
-
 </head>
-
 
 <body>
 
-    <div class="editorial-page">
+    <!-- BARRA SUPERIOR -->
 
-        <!-- ENCABEZADO -->
+    <div class="topbar">
 
-        <header class="editorial-header">
+        <div class="container topbar-inner">
 
-            <div class="container editorial-header-content">
+            <span>
+                Gaceta Médica Boliviana · Facultad de Medicina · Universidad Mayor de San Simón
+            </span>
 
-                <div class="editorial-label">
-                    Editorial
+            <span>
+                Blog Editorial
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="../index.html" class="brand">
+
+                <div class="brand-mark">
+                    GMB
                 </div>
 
-                <h1 class="editorial-title">
-                    El papel de la ciencia en la transformación de la salud
-                </h1>
+                <div class="brand-text">
 
-                <div class="editorial-meta">
-
-                    <span>
+                    <h1>
                         Gaceta Médica Boliviana
-                    </span>
+                    </h1>
 
-                    <span>
-                        •
-                    </span>
-
-                    <span>
-                        Agosto 2026
-                    </span>
+                    <p>
+                        Blog Editorial
+                    </p>
 
                 </div>
+
+            </a>
+
+
+            <nav class="nav">
+
+                <a href="../index.html">
+                    Inicio
+                </a>
+
+                <a href="../index.html#editoriales">
+                    Editoriales
+                </a>
+
+                <a href="../index.html#autores">
+                    Autores
+                </a>
+
+                <a href="../index.html#sobre">
+                    Sobre el blog
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CABECERA DEL EDITORIAL -->
+
+    <section class="hero">
+
+        <div class="container hero-inner">
+
+            <div>
+
+                <span class="hero-eyebrow">
+                    Editorial
+                </span>
+
+                <h2>
+                    El papel de la ciencia en la
+                    <span>transformación de la salud</span>
+                </h2>
+
+                <p class="hero-description">
+
+                    Gaceta Médica Boliviana
+                    &nbsp; · &nbsp;
+                    Agosto 2026
+
+                </p>
 
             </div>
 
-        </header>
+        </div>
+
+    </section>
 
 
-        <!-- CONTENIDO -->
+    <!-- CONTENIDO -->
 
-        <main class="editorial-content-area">
+    <main class="section">
 
-            <div class="container editorial-layout">
+        <div class="container">
+
+            <div class="editorial-layout">
 
 
-                <!-- TEXTO PRINCIPAL -->
+                <!-- ARTÍCULO -->
 
-                <article class="editorial-body">
+                <article class="editorial-article">
 
-                    <p>
+                    <p class="lead">
+
                         La producción científica constituye uno de los pilares
-                        fundamentales para el desarrollo de la medicina y de los
-                        sistemas de salud. Cada investigación representa una
-                        oportunidad para comprender mejor los problemas que
-                        afectan a nuestras poblaciones y para generar soluciones
-                        fundamentadas en evidencia.
+                        fundamentales para el desarrollo de la medicina y de
+                        los sistemas de salud. Cada investigación representa
+                        una oportunidad para comprender mejor los problemas
+                        que afectan a nuestras poblaciones y para generar
+                        soluciones fundamentadas en evidencia.
+
                     </p>
 
 
                     <p>
+
                         En este contexto, la comunicación científica adquiere
                         una importancia particular. Publicar no significa
-                        únicamente presentar resultados, sino también contribuir
-                        al intercambio de conocimiento entre profesionales,
-                        investigadores, estudiantes e instituciones.
+                        únicamente presentar resultados, sino también
+                        contribuir al intercambio de conocimiento entre
+                        profesionales, investigadores, estudiantes e
+                        instituciones.
+
                     </p>
 
 
-                    <blockquote>
-                        La ciencia adquiere verdadero valor cuando el conocimiento
-                        generado puede ser comunicado, discutido y utilizado.
-                    </blockquote>
-
-
-                    <h2>
-                        La importancia de comunicar ciencia
-                    </h2>
+                    <h3>
+                        Ciencia, conocimiento y sociedad
+                    </h3>
 
 
                     <p>
-                        Una comunidad científica saludable necesita espacios
-                        donde las ideas puedan ser compartidas y debatidas.
-                        Las publicaciones académicas permiten que los resultados
-                        de una investigación puedan ser conocidos por otros
-                        investigadores y utilizados como punto de partida para
-                        nuevos estudios.
+
+                        La ciencia médica tiene un impacto que trasciende
+                        las páginas de una revista. Los resultados de una
+                        investigación pueden contribuir a mejorar la práctica
+                        clínica, orientar políticas sanitarias y favorecer
+                        nuevas líneas de investigación.
+
                     </p>
 
 
                     <p>
-                        Sin embargo, la comunicación científica también exige
-                        responsabilidad. La claridad, transparencia, rigor
-                        metodológico y respeto por los principios éticos son
-                        elementos esenciales para preservar la confianza en la
-                        investigación.
+
+                        Por ello, la comunicación responsable del conocimiento
+                        científico constituye una parte esencial del proceso
+                        investigador.
+
                     </p>
 
 
-                    <h2>
-                        Una invitación a reflexionar
-                    </h2>
+                    <h3>
+                        El valor de compartir conocimiento
+                    </h3>
 
 
                     <p>
-                        El desarrollo de la ciencia no depende únicamente de la
-                        cantidad de investigaciones realizadas, sino también de
-                        la calidad de las preguntas que planteamos, de la
-                        rigurosidad con la que buscamos respuestas y de nuestra
-                        capacidad para compartirlas con la sociedad.
+
+                        Las revistas científicas cumplen un papel fundamental
+                        al proporcionar espacios para la discusión, evaluación
+                        y difusión del conocimiento producido por la comunidad
+                        académica.
+
                     </p>
 
 
                     <p>
-                        Desde este espacio, la Gaceta Médica Boliviana busca
-                        promover la reflexión académica y abrir nuevas
-                        conversaciones sobre investigación, educación médica,
-                        práctica clínica y desarrollo científico.
+
+                        La Gaceta Médica Boliviana busca contribuir a este
+                        propósito mediante espacios que permitan acercar la
+                        ciencia y sus protagonistas a la comunidad académica
+                        y profesional.
+
                     </p>
 
 
-                    <h2>
-                        Conclusión
-                    </h2>
+                    <div class="editorial-closing">
 
+                        <p>
+                            <strong>
+                                Gaceta Médica Boliviana
+                            </strong>
+                        </p>
 
-                    <p>
-                        Fortalecer la cultura científica requiere participación,
-                        pensamiento crítico y compromiso. Cada editorial puede
-                        convertirse en una oportunidad para detenernos,
-                        cuestionar nuestras prácticas y pensar en el futuro de
-                        la medicina.
-                    </p>
+                        <p>
+                            Blog Editorial
+                        </p>
 
+                    </div>
 
-                    <a
-                        href="../index.html"
-                        class="back-link">
-                        ← Volver al Blog Editorial
-                    </a>
 
                 </article>
 
 
-                <!-- AUTOR -->
+                <!-- INFORMACIÓN DEL AUTOR -->
 
-                <aside class="editorial-sidebar">
+                <aside class="author-box">
 
-                    <div class="author-card">
+                    <span class="section-kicker">
+                        Autor
+                    </span>
 
-                        <div class="author-card-label">
-                            Autor
-                        </div>
+                    <h3>
+                        Autor de prueba
+                    </h3>
 
-                        <h3>
-                            Autor de prueba
-                        </h3>
+                    <p>
+                        Médico investigador
+                    </p>
 
-                        <p>
-                            Médico investigador
-                        </p>
+                    <p>
+                        Universidad Mayor de San Simón
+                    </p>
 
-                        <p>
-                            Universidad Mayor de San Simón
-                        </p>
+                    <hr>
 
-                        <div class="author-divider"></div>
-
-                        <p>
-                            Esta información corresponde a una
-                            publicación de prueba del Blog Editorial.
-                        </p>
-
-                    </div>
+                    <p>
+                        Esta información corresponde a una publicación
+                        de prueba del Blog Editorial.
+                    </p>
 
                 </aside>
 
 
             </div>
 
-        </main>
+        </div>
 
-    </div>
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 Gaceta Médica Boliviana ·
+                Facultad de Medicina ·
+                Universidad Mayor de San Simón
+
+            </div>
+
+        </div>
+
+    </footer>
 
 
 </body>
