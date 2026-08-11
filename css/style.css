@@ -676,3 +676,105 @@ img {
         gap: 30px;
     }
 }
+
+/* =========================================================
+   PÁGINA INDIVIDUAL DE EDITORIAL
+   ========================================================= */
+
+.editorial-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 55px;
+    align-items: start;
+}
+
+.editorial-article {
+    background: white;
+    border: 1px solid var(--gris-300);
+    border-radius: var(--radio);
+    padding: 55px;
+    box-shadow: var(--sombra-suave);
+}
+
+.editorial-article p {
+    color: var(--gris-700);
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.editorial-article .lead {
+    font-size: 20px;
+    line-height: 1.8;
+    color: var(--azul-oscuro);
+}
+
+.editorial-article h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--azul-oscuro);
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 45px 0 18px;
+}
+
+.author-box {
+    background: white;
+    border: 1px solid var(--gris-300);
+    border-radius: var(--radio);
+    padding: 30px;
+    box-shadow: var(--sombra-suave);
+    position: sticky;
+    top: 120px;
+}
+
+.author-box h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--azul-oscuro);
+    font-size: 24px;
+    margin: 12px 0;
+}
+
+.author-box p {
+    color: var(--gris-500);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.author-box hr {
+    border: none;
+    border-top: 1px solid var(--gris-300);
+    margin: 22px 0;
+}
+
+.editorial-closing {
+    border-top: 1px solid var(--gris-300);
+    margin-top: 45px;
+    padding-top: 25px;
+    color: var(--gris-500);
+}
+
+.editorial-closing p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RESPONSIVE — EDITORIAL
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .editorial-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .author-box {
+        position: static;
+    }
+
+    .editorial-article {
+        padding: 30px;
+    }
+
+}
