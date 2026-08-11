@@ -1,0 +1,354 @@
+/* =========================================================
+   GACETA MÉDICA BOLIVIANA
+   BLOG EDITORIAL
+   ESTILOS PARA PÁGINAS DE EDITORIALES
+   ========================================================= */
+
+.editorial-page {
+    background: #f7f9fb;
+}
+
+/* =========================================================
+   CABECERA DE LA EDITORIAL
+   ========================================================= */
+
+.editorial-hero {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(27,130,148,0.35),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0b263d 0%,
+            #123b5d 55%,
+            #1b8294 100%
+        );
+
+    color: white;
+    padding: 80px 0 75px;
+}
+
+.editorial-hero-inner {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+.editorial-category {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 13px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.08);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+.editorial-title {
+    max-width: 900px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(42px, 6vw, 70px);
+
+    line-height: 1.08;
+
+    margin-bottom: 25px;
+}
+
+.editorial-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    color: rgba(255,255,255,0.78);
+
+    font-size: 14px;
+}
+
+.editorial-meta-separator {
+    opacity: 0.5;
+}
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================= */
+
+.editorial-layout {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        300px;
+
+    gap: 55px;
+
+    padding: 70px 0 100px;
+
+    align-items: start;
+}
+
+/* =========================================================
+   ARTÍCULO
+   ========================================================= */
+
+.editorial-content {
+    background: white;
+
+    border: 1px solid #d6dde3;
+
+    border-radius: 16px;
+
+    padding: 55px;
+
+    box-shadow:
+        0 8px 30px rgba(18, 59, 93, 0.07);
+}
+
+.editorial-content p {
+    color: #3d464d;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 28px;
+}
+
+.editorial-content p:first-of-type {
+    font-size: 19px;
+    color: #24323d;
+}
+
+.editorial-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #0b263d;
+
+    font-size: 30px;
+
+    line-height: 1.25;
+
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.editorial-content h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #123b5d;
+
+    font-size: 23px;
+
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.editorial-content strong {
+    color: #123b5d;
+}
+
+.editorial-content blockquote {
+    margin: 40px 0;
+
+    padding: 25px 30px;
+
+    border-left: 4px solid #b9964f;
+
+    background: #f7f9fb;
+
+    color: #123b5d;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+/* =========================================================
+   INFORMACIÓN DEL AUTOR
+   ========================================================= */
+
+.author-card {
+    background: white;
+
+    border: 1px solid #d6dde3;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 8px 30px rgba(18, 59, 93, 0.07);
+
+    position: sticky;
+
+    top: 110px;
+}
+
+.author-label {
+    color: #1b8294;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.author-name {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #0b263d;
+
+    font-size: 25px;
+
+    line-height: 1.25;
+
+    margin-bottom: 8px;
+}
+
+.author-role {
+    color: #6c7780;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.author-institution {
+    color: #6c7780;
+
+    font-size: 14px;
+}
+
+.author-divider {
+    height: 1px;
+
+    background: #d6dde3;
+
+    margin: 25px 0;
+}
+
+.author-description {
+    color: #6c7780;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   NAVEGACIÓN ENTRE EDITORIALES
+   ========================================================= */
+
+.editorial-navigation {
+    width: min(1100px, 92%);
+
+    margin: 0 auto;
+
+    padding-bottom: 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.editorial-navigation a {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 12px 18px;
+
+    border-radius: 9px;
+
+    background: #123b5d;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.editorial-navigation a:hover {
+    background: #0b263d;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .editorial-layout {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .author-card {
+        position: static;
+    }
+
+    .editorial-content {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .editorial-hero {
+        padding: 60px 0;
+    }
+
+    .editorial-title {
+        font-size: 40px;
+    }
+
+    .editorial-meta {
+        flex-wrap: wrap;
+    }
+
+    .editorial-content {
+        padding: 28px;
+    }
+
+    .editorial-content p {
+        font-size: 16px;
+    }
+
+    .editorial-navigation {
+        flex-direction: column;
+    }
+
+    .editorial-navigation a {
+        justify-content: center;
+    }
+}
