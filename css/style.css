@@ -778,3 +778,130 @@ img {
     }
 
 }
+
+/* =========================================================
+   PERFILES DE AUTORES
+   ========================================================= */
+
+.author-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.author-profile {
+    background: var(--blanco);
+    border: 1px solid var(--gris-300);
+    border-radius: var(--radio);
+    padding: 30px;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion);
+}
+
+.author-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-media);
+}
+
+.author-profile-mark {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: var(--azul-claro);
+    color: var(--azul);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+.author-profile-label {
+    color: var(--turquesa);
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-bottom: 8px;
+}
+
+.author-profile h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--azul-oscuro);
+    font-size: 23px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+.author-profile-role {
+    color: var(--gris-500);
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.author-profile-institution {
+    color: var(--gris-500);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.author-profile-interests {
+    border-top: 1px solid var(--gris-300);
+    padding-top: 18px;
+    margin-top: 18px;
+}
+
+.author-profile-interests span {
+    display: inline-block;
+
+    background: var(--turquesa-claro);
+    color: var(--turquesa);
+
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    margin: 3px 3px 3px 0;
+}
+
+.author-profile-link {
+    display: inline-flex;
+    margin-top: 22px;
+
+    color: var(--azul);
+    font-size: 13px;
+    font-weight: 800;
+
+    transition: var(--transicion);
+}
+
+.author-profile-link:hover {
+    color: var(--turquesa);
+}
+
+
+/* =========================================================
+   RESPONSIVE — AUTORES
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .author-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .author-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
