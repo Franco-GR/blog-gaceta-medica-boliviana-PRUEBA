@@ -1,0 +1,330 @@
+/* =========================================================
+   GACETA MÉDICA BOLIVIANA
+   BLOG EDITORIAL
+   PERFIL DE AUTORES
+   ========================================================= */
+
+.author-hero {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(27,130,148,0.35),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0b263d 0%,
+            #123b5d 55%,
+            #1b8294 100%
+        );
+
+    color: white;
+    padding: 75px 0;
+}
+
+
+.author-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.author-avatar {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+
+.author-kicker {
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #d9c18a;
+
+    margin-bottom: 10px;
+}
+
+
+.author-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.1;
+
+    margin-bottom: 10px;
+}
+
+
+.author-role {
+    color: rgba(255,255,255,0.82);
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+}
+
+
+.author-institution {
+    color: rgba(255,255,255,0.65);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CONTENIDO DEL PERFIL
+   ========================================================= */
+
+.author-content {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        320px;
+
+    gap: 60px;
+
+    align-items: start;
+
+}
+
+
+.author-main {
+
+    max-width: 720px;
+
+}
+
+
+.author-main p {
+
+    color: var(--gris-700);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+
+}
+
+
+.author-main h3 {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: var(--azul-oscuro);
+
+    font-size: 26px;
+
+    margin-top: 40px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================================
+   ETIQUETAS
+   ========================================================= */
+
+.author-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+.author-tags span {
+
+    background: var(--turquesa-claro);
+
+    color: var(--turquesa);
+
+    border-radius: 6px;
+
+    padding: 7px 10px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+/* =========================================================
+   INFORMACIÓN ACADÉMICA
+   ========================================================= */
+
+.author-info-card {
+
+    background: white;
+
+    border: 1px solid var(--gris-300);
+
+    border-radius: var(--radio);
+
+    padding: 30px;
+
+    box-shadow: var(--sombra-suave);
+
+}
+
+
+.author-info-label {
+
+    color: var(--turquesa);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 22px;
+
+}
+
+
+.author-info-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 15px 0;
+
+    border-top: 1px solid var(--gris-300);
+
+}
+
+
+.author-info-item:first-of-type {
+
+    border-top: none;
+
+    padding-top: 0;
+
+}
+
+
+.author-info-item strong {
+
+    color: var(--azul-oscuro);
+
+    font-size: 13px;
+
+}
+
+
+.author-info-item span {
+
+    color: var(--gris-500);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   PUBLICACIONES
+   ========================================================= */
+
+.author-publications {
+
+    background: var(--gris-50);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .author-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .author-hero {
+
+        padding: 60px 0;
+
+    }
+
+
+    .author-hero-inner {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .author-avatar {
+
+        width: 85px;
+
+        height: 85px;
+
+        font-size: 24px;
+
+    }
+
+
+    .author-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .author-main p {
+
+        font-size: 16px;
+
+    }
+
+}
