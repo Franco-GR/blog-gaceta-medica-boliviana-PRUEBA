@@ -328,3 +328,223 @@
     }
 
 }
+
+/* =========================================================
+   DIRECTORIO GENERAL DE AUTORES
+   ========================================================= */
+
+.author-directory-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+}
+
+
+.author-directory-card {
+
+    background: white;
+
+    border: 1px solid var(--gris-300);
+
+    border-radius: var(--radio);
+
+    padding: 30px;
+
+    box-shadow: var(--sombra-suave);
+
+    transition: var(--transicion);
+
+}
+
+
+.author-directory-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: var(--sombra-media);
+
+}
+
+
+.author-directory-avatar {
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul),
+            var(--turquesa)
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    margin-bottom: 22px;
+
+}
+
+
+.author-directory-label {
+
+    color: var(--turquesa);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+
+}
+
+
+.author-directory-card h3 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: var(--azul-oscuro);
+
+    font-size: 24px;
+
+    line-height: 1.25;
+
+    margin-bottom: 10px;
+
+}
+
+
+.author-directory-role {
+
+    color: var(--gris-700);
+
+    font-size: 14px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.author-directory-institution {
+
+    color: var(--gris-500);
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.author-directory-interests {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.author-directory-interests span {
+
+    background: var(--turquesa-claro);
+
+    color: var(--turquesa);
+
+    border-radius: 6px;
+
+    padding: 6px 9px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+}
+
+
+.author-directory-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    color: var(--azul);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: var(--transicion);
+
+}
+
+
+.author-directory-link:hover {
+
+    color: var(--turquesa);
+
+    transform: translateX(3px);
+
+}
+
+/* =========================================================
+   RESPONSIVE — DIRECTORIO DE AUTORES
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .author-directory-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .author-directory-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .author-directory-card {
+
+        padding: 26px;
+
+    }
+
+}
