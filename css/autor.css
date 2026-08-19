@@ -267,6 +267,51 @@
 
 }
 
+/* =========================================================
+   NAVEGACIÓN DEL PERFIL
+   ========================================================= */
+
+.editorial-navigation {
+    width: min(1100px, 92%);
+
+    margin: 0 auto;
+
+    padding-bottom: 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.editorial-navigation a {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 12px 18px;
+
+    border-radius: 9px;
+
+    background: #123b5d;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+
+.editorial-navigation a:hover {
+    background: #0b263d;
+
+    transform: translateY(-2px);
+}
 
 /* =========================================================
    RESPONSIVE
@@ -327,6 +372,20 @@
 
     }
 
+   
+    .editorial-navigation {
+       
+        flex-direction: column;
+       
+    }
+
+   
+    .editorial-navigation a {
+       
+        justify-content: center;
+       
+    }
+   
 }
 
 /* =========================================================
